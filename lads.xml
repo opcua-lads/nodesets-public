@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UANodeSet LastModified="2023-03-24T17:49:30.761Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://opcfoundation.org/UA/Machinery/Types.xsd" xmlns:s2="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:s3="http://opcfoundation.org/UA/Machinery/Types.xsd" xmlns:s4="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:s5="http://yourorganisation.org/helper/Types.xsd">
+<UANodeSet LastModified="2023-03-24T20:39:40.088Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://opcfoundation.org/UA/Machinery/Types.xsd" xmlns:s2="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:s3="http://opcfoundation.org/UA/Machinery/Types.xsd" xmlns:s4="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:s5="http://yourorganisation.org/helper/Types.xsd">
     <NamespaceUris>
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
         <Uri>http://opcfoundation.org/UA/AMB/</Uri>
@@ -61,7 +61,7 @@
             <si:Generator Product="SiOME" Edition="Standard" Version="2.5.12"/>
         </Extension>
         <Extension>
-            <si:GeneratorExtension Hash="d56f6b744a0afae416ffc45686904ba3"/>
+            <si:GeneratorExtension Hash="4315fff14e88e4cca6a737ae276162a1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=4;i=3003" BrowseName="4:KeyValueType">
@@ -6461,4 +6461,30 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAObject>
+    <UAVariable DataType="LocalizedText" NodeId="ns=4;i=6136" BrowseName="FalseState" ParentNodeId="ns=4;i=6007">
+        <DisplayName>FalseState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=4;i=6007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:LocalizedText>
+                <uax:Text>off</uax:Text>
+            </uax:LocalizedText>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" NodeId="ns=4;i=6137" BrowseName="TrueState" ParentNodeId="ns=4;i=6007">
+        <DisplayName>TrueState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=4;i=6007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:LocalizedText>
+                <uax:Text>on</uax:Text>
+            </uax:LocalizedText>
+        </Value>
+    </UAVariable>
 </UANodeSet>
